@@ -1,180 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Properties</title>
+    <title>Properties Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <i class="fas fa-envelope" style="color: #ff5722;"></i>
-    <span> info@company.com</span>
-    <i class="fas fa-map" style="color: #ff5722;"></i>
-    <span>Sunny Isles Beach, FL 33160</span>
-    
-    <div class="social">
-        <a href="#" class="circle facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="circle twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="circle linkedin">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="#" class="circle instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
+    <!-- TOP BAR -->
+    <div class="top-info">
+        <div class="container clearfix">
+            <div class="info-left">
+                <div class="info-box"><i class="fa-solid fa-envelope"></i> info@company.com</div>
+                <div class="info-box"><i class="fa-solid fa-map"></i> Sunny Isles Beach, FL 33160</div>
+            </div>
+            <div class="info-right">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <hr>
-        <header class="link">
-            <h1>VILLA</h1>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#" class="active">Properties</a></li>
-                <li><a href="./propertydetails.html">Property Details</a></li>
-                <li><a href="./contactus.html">Contact Us</a></li>
-            </ul>
-            <a class="cta1" href="#"><span style="color:white;">
-                <span class="fa fa-calendar" style="color: white;"></span>
-                Schedule a visit</span>
-            </a>        
-        </header>
-        <div class="hello">
-            <img src="./ASSECTS/page-heading-bg.jpg" alt="">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container clear">
+            <a href="./index.html" class="logo">VILLA</a>
+            <nav class="nav clear">
+                <ul class="menu">
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a href="./properties.html" class="active">Properties</a></li>
+                    <li><a href="./property-details.html">Property Details</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+                <a href="#" class="schedule-btn">
+                    <div class="round-icon"><i class="fa-solid fa-calendar"></i></div>
+                    Schedule a visit
+                </a>
+            </nav>
         </div>
-        <div class="hello1">
-            <button>HOME / PROPERTIES </span></button>
-            <h1>PROPERTIES</h1>
+    </header>
+    <!-- BANNER -->
+    <div class="banner properties-banner">
+        <div class="container">
+            <div class="path">HOME / PROPERTIES</div>
+            <h1>Properties</h1>
         </div>
-        <div class="show">
-            <button class="act">Show All</button>
-            <button class="A"><a href="#">Apartment</a></button>
-            <button class="A"><a href="#">Villa House</a></button>
-            <button class="A"><a href="#">Penthouse</a></button>
-        </div>
-    <section class="product">
-        <div class="card">
-            <img src="./ASSECTS/property-01.jpg" alt="Villa">
-            <div class="top-row">
-                <button class="lu">Luxury Villa</button>
-                <h3 class="price">$2.264.000</h3>
-            </div>
-            <h3>18 old street Miami, OR 97219</h3>
-            <pre>Bedrooms:<b>8</b>      Bathrooms:<b>8</b></pre>
-            <pre>Area:<b>545m2</b>  Floor:<b>3</b>  parking:<b>6 spots</b></pre>
-            <button class="bo">Schedule a visit</button>
-        </div>
+    </div>
 
-        <div class="card">
-            <img src="./ASSECTS/property-02.jpg" alt="Villa">
-            <div class="top-row">
-                <button class="lu">Luxury Villa</button>
-                <h3 class="price">$2.264.000</h3>
-            </div>
-            <h3>54 New Street Florida, OR 27001</h3>
-            <pre>Bedrooms:<b>6</b>      Bathrooms:<b>5</b></pre>
-            <pre>Area:<b>450m2</b>  Floor:<b>3</b>  parking:<b>8 spots</b></pre>
-            <button class="bo">Schedule a visit</button>
-        </div>
+    <!-- PROPERTIES LISTING -->
+    <section class="properties-section">
+        <div class="container">
 
-        <div class="card">
-            <img src="./ASSECTS/property-03.jpg" alt="Villa">
-            <div class="top-row">
-                <button class="lu">Luxury Villa</button>
-                <h3 class="price">$2.264.000</h3>
+            <div class="category-tabs">
+                <div class="tab-btn active">Show All</div>
+                <div class="tab-btn">Apartment</div>
+                <div class="tab-btn">Villa House</div>
+                <div class="tab-btn">Penthouse</div>
             </div>
-            <h3>26 Mid Street Portland, OR 38540</h3>
-            <pre>Bedrooms:<b>5</b>      Bathrooms:<b>4</b></pre>
-            <pre>Area:<b>225m2</b>  Floor:<b>3</b>  parking:<b>10 spots</b></pre>
-            <button class="bo">Schedule a visit</button>
-        </div>
 
-        <div class="card">
-            <img src="./ASSECTS/property-04.jpg" alt="Villa">
-            <div class="top-row">
-                <button class="lu">Luxury Villa</button>
-                <h3 class="price">$2.264.000</h3>
-            </div>
-            <h3>26 Old Street Miami, OR 12836</h3>
-            <pre>Bedrooms:<b>5</b>      Bathrooms:<b>3</b></pre>
-            <pre>Area:<b>565m2</b>  Floor:<b>3</b>  parking:<b>8 spots</b></pre>
-            <button class="bo">Schedule a visit</button>
-        </div>
+            <div class="house-grid clearfix">
 
-        <div class="card">
-            <img src="./ASSECTS/property-05.jpg" alt="Villa">
-            <div class="top-row">
-                <button class="lu">Luxury Villa</button>
-                <h3 class="price">$2.264.000</h3>
-            </div>
-            <h3>14 Mid Street Miami, OR 36345</h3>
-            <pre>Bedrooms:<b>8</b>      Bathrooms:<b>4</b></pre>
-            <pre>Area:<b>525m2</b>  Floor:<b>3</b>  parking:<b>4 spots</b></pre>
-            <button class="bo">Schedule a visit</button>
-        </div>
+                <!-- Property 1 -->
+                <div class="house-box">
+                    <img src="./Assets/property-01.jpg" alt="Property">
+                    <span class="tag">Luxury Villa</span>
+                    <span class="price">$2.264.000</span>
+                    <h4>18 Old Street Miami, OR 97219</h4>
+                    <ul>
+                        <li>Bedrooms: <b>8</b></li>
+                        <li>Bathrooms: <b>8</b></li>
+                        <li>Area: <b>545m2</b></li>
+                        <li>Floor: <b>3</b></li>
+                        <li>Parking: <b>6 spots</b></li>
+                    </ul>
+                    <div><a href="./contact.html" class="black-button">Schedule a visit</a></div>
+                </div>
 
-        <div class="card">
-            <img src="./ASSECTS/property-06.jpg" alt="Villa">
-            <div class="top-row">
-                <button class="lu">Luxury Villa</button>
-                <h3 class="price">$2.264.000</h3>
-            </div>
-            <h3>18 old street Miami, OR 97219</h3>
-            <pre>Bedrooms:<b>8</b>      Bathrooms:<b>8</b></pre>
-            <pre>Area:<b>545m2</b>  Floor:<b>3</b>  parking:<b>6 spots</b></pre>
-            <button class="bo">Schedule a visit</button>
-        </div>
+                <!-- Property 2 -->
+                <div class="house-box">
+                    <img src="./Assets/property-02.jpg" alt="Property">
+                    <span class="tag">Luxury Villa</span>
+                    <span class="price">$1.180.000</span>
+                    <h4>54 New Street Florida, OR 27001</h4>
+                    <ul>
+                        <li>Bedrooms: <b>6</b></li>
+                        <li>Bathrooms: <b>5</b></li>
+                        <li>Area: <b>450m2</b></li>
+                        <li>Floor: <b>3</b></li>
+                        <li>Parking: <b>8 spots</b></li>
+                    </ul>
+                    <div><a href="./contact.html" class="black-button">Schedule a visit</a></div>
+                </div>
 
-        <div class="card">
-            <img src="./ASSECTS/property-05.jpg" alt="Villa">
-            <div class="top-row">
-                <button class="lu">Luxury Villa</button>
-                <h3 class="price">$2.264.000</h3>
-            </div>
-            <h3>14 Mid Street Miami, OR 36450</h3>
-            <pre>Bedrooms:<b>8</b>      Bathrooms:<b>8</b></pre>
-            <pre>Area:<b>550m2</b>  Floor:<b>3</b>  parking:<b>12 spots</b></pre>
-            <button class="bo">Schedule a visit</button>
-        </div>
+                <!-- Property 3 -->
+                <div class="house-box">
+                    <img src="./Assets/property-03.jpg" alt="Property">
+                    <span class="tag">Luxury Villa</span>
+                    <span class="price">$1.460.000</span>
+                    <h4>26 Mid Street Portland, OR 38540</h4>
+                    <ul>
+                        <li>Bedrooms: <b>5</b></li>
+                        <li>Bathrooms: <b>4</b></li>
+                        <li>Area: <b>225m2</b></li>
+                        <li>Floor: <b>3</b></li>
+                        <li>Parking: <b>10 spots</b></li>
+                    </ul>
+                    <div><a href="./contact.html" class="black-button">Schedule a visit</a></div>
+                </div>
 
-        <div class="card">
-            <img src="./ASSECTS/property-03.jpg" alt="Villa">
-            <div class="top-row">
-                <button class="lu">Luxury Villa</button>
-                <h3 class="price">$2.264.000</h3>
-            </div>
-            <h3>26 Old Street Miami, OR 12870</h3>
-            <pre>Bedrooms:<b>12</b>      Bathrooms:<b>15</b></pre>
-            <pre>Area:<b>380m2</b>  Floor:<b>3</b>  parking:<b>14 spots</b></pre>
-            <button class="bo">Schedule a visit</button>
-        </div>
-        <div class="card">
-            <img src="./ASSECTS/property-04.jpg" alt="Villa">
-            <div class="top-row">
-                <button class="lu">Luxury Villa</button>
-                <h3 class="price">$2.264.000</h3>
-            </div>
-            <h3>34 New Street Miami, OR 24650</h3>
-            <pre>Bedrooms:<b>10</b>      Bathrooms:<b>12</b></pre>
-            <pre>Area:<b>860m2</b>  Floor:<b>3</b>  parking:<b>10 spots</b></pre>
-            <button class="bo">Schedule a visit</button>
-        </div>
+                <!-- Property 4 -->
+                <div class="house-box">
+                    <img src="./Assets/property-04.jpg" alt="Property">
+                    <span class="tag">Apartment</span>
+                    <span class="price">$584.500</span>
+                    <h4>12 Hope Street Portland, OR 12650</h4>
+                    <ul>
+                        <li>Bedrooms: <b>4</b></li>
+                        <li>Bathrooms: <b>3</b></li>
+                        <li>Area: <b>125m2</b></li>
+                        <li>Floor: <b>25th</b></li>
+                        <li>Parking: <b>2 cars</b></li>
+                    </ul>
+                    <div><a href="./contact.html" class="black-button">Schedule a visit</a></div>
+                </div>
 
+                <!-- Property 5 -->
+                <div class="house-box">
+                    <img src="./Assets/property-05.jpg" alt="Property">
+                    <span class="tag">Penthouse</span>
+                    <span class="price">$925.600</span>
+                    <h4>34 Hope Street Portland, OR 42680</h4>
+                    <ul>
+                        <li>Bedrooms: <b>4</b></li>
+                        <li>Bathrooms: <b>4</b></li>
+                        <li>Area: <b>180m2</b></li>
+                        <li>Floor: <b>38th</b></li>
+                        <li>Parking: <b>2 cars</b></li>
+                    </ul>
+                    <div><a href="./contact.html" class="black-button">Schedule a visit</a></div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="house-box">
+                    <img src="./Assets/property-06.jpg" alt="Property">
+                    <span class="tag">Modern Condo</span>
+                    <span class="price">$450.000</span>
+                    <h4>22 Hope Street Portland, OR 16540</h4>
+                    <ul>
+                        <li>Bedrooms: <b>3</b></li>
+                        <li>Bathrooms: <b>2</b></li>
+                        <li>Area: <b>165m2</b></li>
+                        <li>Floor: <b>26th</b></li>
+                        <li>Parking: <b>3 cars</b></li>
+                    </ul>
+                    <div><a href="#" class="black-button">Schedule a visit</a></div>
+                </div>
+
+                <!-- Property 7 -->
+                <div class="house-box">
+                    <img src="./Assets/property-01.jpg" alt="Property">
+                    <span class="tag">Luxury Villa</span>
+                    <span class="price">$980.000</span>
+                    <h4>14 Mid Street Miami, OR 36450</h4>
+                    <ul>
+                        <li>Bedrooms: <b>8</b></li>
+                        <li>Bathrooms: <b>8</b></li>
+                        <li>Area: <b>550m2</b></li>
+                        <li>Floor: <b>3</b></li>
+                        <li>Parking: <b>12 spots</b></li>
+                    </ul>
+                    <div><a href="#" class="black-button">Schedule a visit</a></div>
+                </div>
+
+                <!-- Property 8 -->
+                <div class="house-box">
+                    <img src="./Assets/property-02.jpg" alt="Property">
+                    <span class="tag">Luxury Villa</span>
+                    <span class="price">$1.520.000</span>
+                    <h4>26 Old Street Miami, OR 12870</h4>
+                    <ul>
+                        <li>Bedrooms: <b>12</b></li>
+                        <li>Bathrooms: <b>15</b></li>
+                        <li>Area: <b>380m2</b></li>
+                        <li>Floor: <b>3</b></li>
+                        <li>Parking: <b>14 spots</b></li>
+                    </ul>
+                    <div><a href="#" class="black-button">Schedule a visit</a></div>
+                </div>
+
+                <!-- Property 9 -->
+                <div class="house-box">
+                    <img src="./Assets/property-03.jpg" alt="Property">
+                    <span class="tag">Luxury Villa</span>
+                    <span class="price">$3.145.000</span>
+                    <h4>34 New Street Miami, OR 24650</h4>
+                    <ul>
+                        <li>Bedrooms: <b>10</b></li>
+                        <li>Bathrooms: <b>12</b></li>
+                        <li>Area: <b>860m2</b></li>
+                        <li>Floor: <b>3</b></li>
+                        <li>Parking: <b>10 spots</b></li>
+                    </ul>
+                    <div><a href="#" class="black-button">Schedule a visit</a></div>
+                </div>
+
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+            </div>
+
+        </div>
     </section>
-        <div class="foot">
-            <a href="#" class="cir1">1</a>
-            <a href="#" class="cir">2</a>
-            <a href="#" class="cir">3</a>
-            <a href="#" class="cir">>></a>
-        </div>
 
-    <footer>
-        <div class="foo">
-            Copyright &copy; 2048 Villa Agency Co., Ltd. All right reserved. Design: EDARA BALA MOHAN
-        </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Copyright &copy; 2048 Villa Agency Co., Ltd. All rights reserved. Design: EDARA BALA MOHAN</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
